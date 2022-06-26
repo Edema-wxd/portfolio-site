@@ -1,0 +1,4 @@
+background color: #5927e5,
+text color, grey #9b89b3,
+text color, white #fcf7ff
+black  #1f1926;}
