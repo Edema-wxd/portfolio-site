@@ -1,3 +1,122 @@
-body{
-    font-family: 'Jost', sans-serif;
+body {
+    font-family: sans-serif;
+    /*'Jost*/
+    background-color: #5927e5;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+
+label {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    font-size: large;
+}
+
+fieldset {
+    border-width: 0px;
+    border-style: none;
+    padding-left: 30%;
+    padding-right: auto;
+}
+
+textarea {
+    font-family: "Jost", sans-serif;
+}
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 0px 0px;
+    grid-template-areas:
+        "menu content"
+        "menu content"
+        "menu content"
+        "menu content";
+}
+
+.menu {
+    grid-area: menu;
+    text-align: center;
+    position: fixed;
+    display: inline;
+    left: 10px;
+    background-color: #5927e5;
+    height: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  90% 90% 90% 90%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "one"
+        "two"
+        "thr"
+        "four";
+    grid-area: content;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.thr {
+    grid-area: thr;
+}
+
+.four {
+    grid-area: four;
+}
+
+
+
+
+
+
+.page {
+    font-weight: 600;
+    color: #fcf7ff;
+    height: 100%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    color: #fcf7ff;
+    width: 100px;
+    background-color: #5927e5;
+    display: inline-block;
+    border-radius: 12px;
+    border-color: #fcf7ff;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background: #fcf7ff;
+    text-decoration: none;
+    color: #1f1926;
+}
+
+#skills {
+    color: #1f1926;
+    background-color: #9b89b3;
 }

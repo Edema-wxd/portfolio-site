@@ -1,15 +1,74 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet"> 
+    -->
     <title>FRANCIS PORTFOLIO</title>
 </head>
-<body>
+
+<body class="grid-container">
+    <nav class="menu">
+        <a class="btn" href="#home" style="border-style: solid; border-width: 1px">Home</a>
+        <br />
+        <a class="btn" href="#skills" style="border-style: solid; border-width: 1px">Skills</a>
+        <br />
+
+        <a class="btn" href="#port" style="border-style: solid; border-width: 1px">portfolio</a>
+        <br />
+
+        <a class="btn" href="#contact" style="border-style: solid; border-width: 1px">Contact me</a>
+        <br />
+
+        <br />
+    </nav>
+    <main class="content">
+        <div class="page one" id="home">
+            <h1>Hi, I'm Francis, a Frontend developer</h1>
+        </div>
+
+        <div class="page two" id="skills">
+            <h2>Skills and Tools</h2>
+            <img src="img/ai.svg" alt="Adobe Illustrator" />
+            <img src="img/django-seeklogo.com.svg" alt="Django" style="height: 60; width: 60" />
+            <img src="img/html.svg" alt="Html" />
+            <img src="img/js.svg" alt="Javascript" />
+            <img src="img/python-seeklogo.com.svg" alt="Python" style="height: 60; width: 60" />
+        </div>
+
+        <div class="page thr" id="port">
+            <h2>Portfolio of my previous works</h2>
+        </div>
+
+        <div class="page four" id="contact" style="height: 90%">
+            <form>
+                <h1>Contact me</h1>
+                <br />
+                <label for="text">Name</label>
+                <br />
+                <input type="text" id="name" name="text" />
+                <br />
+                <label for="email">Email</label>
+                <br />
+                <input type="email" id="email" name="email" />
+                <br />
+                <label for="textarea">Message</label>
+                <br />
+                <textarea id="mess-text" name="textarea" rows="3" cols="25" placeholder="Send me a Message" autofocus
+                    wrap="hard"></textarea><br /><br />
+            </form>
+            <footer class="foot">designed by Francis &copy; 2022</footer>
+        </div>
+    </main>
+
     
 </body>
+
 </html>
