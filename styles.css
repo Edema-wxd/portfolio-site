@@ -1,7 +1,19 @@
+:root {
+    --back-color: #5927e5;
+    --black: #1f1926;
+    --white: #fcf7ff;
+
+}
+
+
 body {
     font-family: sans-serif;
     /*'Jost*/
-    background-color: #5927e5;
+    background-image: linear-gradient(to bottom left, var(--black), var(--back-color));
+    height: max-content;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 10px;
 }
 
 footer {
@@ -12,7 +24,7 @@ footer {
 
 
 label {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     margin: 0 auto;
     font-size: large;
 }
@@ -31,7 +43,7 @@ textarea {
 
 
 
-
+/*
 .grid-container {
     display: grid;
     grid-template-columns: 0.4fr 1.6fr;
@@ -50,14 +62,16 @@ textarea {
     position: fixed;
     display: inline;
     left: 10px;
-    background-color: #5927e5;
     height: 100%;
 }
-
+*/
+main{
+    height: 100%;
+}
 .content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  90% 90% 90% 90%;
+    grid-template-rows:  100% 100% 100% 100%;
     gap: 0px 0px;
     grid-template-areas:
         "one"
@@ -69,6 +83,10 @@ textarea {
 
 .one {
     grid-area: one;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .two {
@@ -84,25 +102,21 @@ textarea {
 }
 
 
-
-
-
-
 .page {
     font-weight: 600;
-    color: #fcf7ff;
+    color: var(--white);
     height: 100%;
     padding: 20px;
     margin: 10px;
 }
 
 .btn {
-    color: #fcf7ff;
+    color: var(--white);
     width: 100px;
-    background-color: #5927e5;
+    background-color: var(--back-color);
     display: inline-block;
     border-radius: 12px;
-    border-color: #fcf7ff;
+    border-color: var(--white);
     border: none;
     padding: 5px;
     text-decoration: none;
@@ -111,9 +125,15 @@ textarea {
 }
 
 .btn:hover {
-    background: #fcf7ff;
+    background: var(--white);
     text-decoration: none;
-    color: #1f1926;
+    color: var(--black);
+}
+
+.headertxt{
+    display: inline-block;
+    margin-bottom: 200px;
+    font-size: xxx-large;
 }
 
 #skills {
